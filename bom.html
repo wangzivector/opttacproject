@@ -34,45 +34,11 @@
         font-size: 1.5rem;
       }
       .main-navigation .navbar-nav {
-        column-gap: 0.75rem;
+        column-gap: 0.5rem;
       }
 
       .cover-jumbotron {
         padding-top: 2rem;
-      }
-
-      .bom-table {
-        width: 100%;
-        max-width: 1200px;
-        margin: 30px auto;
-        border-collapse: collapse;
-        font-size: 1rem;
-      }
-
-      .bom-table th,
-      .bom-table td {
-        border: 1px solid #dee2e6;
-        padding: 12px 16px;
-        text-align: left;
-        vertical-align: middle;
-      }
-
-      .bom-table th {
-        background-color: #f8f9fa;
-        font-weight: 600;
-      }
-
-      .bom-table tr:nth-child(even) {
-        background-color: #fcfcfc;
-      }
-
-      .bom-table a {
-        color: #007bff;
-        text-decoration: none;
-      }
-
-      .bom-table a:hover {
-        text-decoration: underline;
       }
 
       .back-home {
@@ -87,11 +53,12 @@
       <nav class="main-navigation navbar navbar-expand-md navbar-light bg-light justify-content-center" aria-label="Main navigation">
         <div class="container justify-content-center">
           <div class="navbar-nav flex-row flex-wrap justify-content-center align-items-center">
-            <a class="navbar-brand" href="index.html"><b>OptTac</b></a>
-            <a class="nav-item nav-link" href="index.html#overview">Overview</a>
-            <a class="nav-item nav-link" href="index.html#devices">Devices</a>
-            <a class="nav-item nav-link" href="index.html#results">Results</a>
-            <a class="nav-item nav-link" href="index.html#contact">Contact</a>
+            <a class="navbar-brand" href="index.html"><ins><b>OptTac</b></ins></a>
+            <a class="nav-item nav-link" style=" color:#338794;" href="bom.html"><b>BOM</b></a>
+            <a class="nav-item nav-link" style=" color:#338794;" href="circuit.html"><b>Circuit</b></a>
+            <a class="nav-item nav-link" style=" color:#338794;" href="assembly.html"><b>Assembly</b></a>
+            <a class="nav-item nav-link" style=" color:#338794;" href="calibration.html"><b>Calibration</b></a>
+            <a class="nav-item nav-link" style=" color:#338794;" href="umi.html"><b>UMI</b></a>
           </div>
         </div>
       </nav>
@@ -103,7 +70,7 @@
           <div class="row">
             <div class="col">
               <h2 style="font-size:30px; max-width:1280px; margin:0 auto;">
-                <b><ins>OptTac</ins></b>: Bill of Materials (BOM)
+                Bill of Materials (BOM) for OptTac 
               </h2>
               <p style="font-size:1.2rem; color:#555; margin-top:1rem;">
                 Complete list of components, parts, and materials required to build the OptTac sensor kit.
@@ -115,90 +82,16 @@
       </div>
     </section>
 
-     <!-- 
-    <section>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <table class="bom-table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Component</th>
-                  <th>Specification</th>
-                  <th>Qty</th>
-                  <th>Reference / Link</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Flexible Printed Circuit Board (FPCB)</td>
-                  <td>Custom OptTac taxel array, 24 × 24 mm</td>
-                  <td>1</td>
-                  <td><a href="#" target="_blank">Gerber files</a></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>LED (Light-Emitting Diode)</td>
-                  <td>0603 package, specific wavelength</td>
-                  <td>16</td>
-                  <td><a href="#" target="_blank">Datasheet</a></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Photodiode (PD)</td>
-                  <td>0603 package, matched to LED</td>
-                  <td>16</td>
-                  <td><a href="#" target="_blank">Datasheet</a></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Silicone Elastomer</td>
-                  <td>Optically clear, Shore hardness XX</td>
-                  <td>1 kit</td>
-                  <td><a href="#" target="_blank">Supplier</a></td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Connector</td>
-                  <td>FPC connector, 0.5 mm pitch</td>
-                  <td>2</td>
-                  <td><a href="#" target="_blank">Datasheet</a></td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Microcontroller / DAQ</td>
-                  <td>STM32 / Arduino compatible</td>
-                  <td>1</td>
-                  <td><a href="#" target="_blank">Link</a></td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Exoskeleton Interface</td>
-                  <td>Custom 3D-printed parts</td>
-                  <td>1 set</td>
-                  <td><a href="#" target="_blank">STL files</a></td>
-                </tr>
-              </tbody>
-            </table> 
-            -->
-            
-            <p class="text-center mt-4" style="color:#777;">
-              <i class="fas fa-info-circle"></i>
-              Will be available soon. Please check back later for the complete BOM.
-            </p>
+    <p class="text-center mt-4" style="color:#777;">
+      <i class="fas fa-info-circle"></i>
+      Will be available soon. <br> Please check back later for the prepared materials.
+    </p>
 
-            <div class="text-center back-home">
-              <a class="btn btn-light" style="background-color:#c0e0dc; color:#353434; border-color:#000000;" href="index.html">
-                <i class="fas fa-arrow-left"></i> &nbsp;Back to Project
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="text-center back-home">
+    <a class="btn btn-light" style="background-color:#c0e0dc; color:#353434; border-color:#000000;" href="index.html">
+      <i class="fas fa-arrow-left"></i> &nbsp;Back to Project
+    </a>
+  </div>
 
     <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
       <hr>
