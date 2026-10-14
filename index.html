@@ -22,25 +22,49 @@
     opacity: 0.13;
     border-top: 2px  solid #000000;
   }
+        .main-navigation .nav-link {
+          font-size: 1.5rem;
+        }
+        .main-navigation .navbar-brand {
+          font-size: 1.5rem;
+        }
+        .main-navigation .navbar-nav {
+          column-gap: 0.75rem;
+        }
+        .cover-jumbotron {
+          padding-top: 2rem;
+        }
     </style>
   </head>
   <script type="module" src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <body>
+  <header>
+    <nav class="main-navigation navbar navbar-expand-md navbar-light bg-light justify-content-center" aria-label="Main navigation">
+      <div class="container justify-content-center">
+        <div class="navbar-nav flex-row flex-wrap justify-content-center align-items-center">
+          <a class="navbar-brand" href="#top"><b>OptTac</b></a>
+          <a class="nav-item nav-link" href="#overview">Overview</a>
+          <a class="nav-item nav-link" href="#devices">Devices</a>
+          <a class="nav-item nav-link" href="#results">Results</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
   <!-- cover -->
-  <section>
-    <div class="jumbotron text-center mt-0">
+  <section id="top">
+    <div class="jumbotron cover-jumbotron text-center mt-0">
       <div class="container-fluid">
         <div class="row">
           <div class="col"> 
             <h3 style="color:#bb070780;"> <em>(Under construction)</em></h3>
-            <h2 style="font-size:30px;">
-              <b><ins>OptTac</ins></b>: Reproducible <b>Opt</b>oelectronic <b>Tac</b>tile Sensing <br>of Distributed Triaxial Deformation, Force, and Torque for Robotic Manipulation
-            </h2>
-
+            <h2 style="font-size:30px; max-width:1280px; margin-left:auto; margin-right:auto;"> <!-- <b><ins>OptTac</ins></b>:  -->
+              Programmable <ins><b>Opt</b></ins>oelectronic <ins><b>Tac</b></ins>tile Sensing of Distributed Triaxial Deformation, Force, and Torque in Robotic Manipulation
+          </h2>
             <hr>
-
             <h6>
               <a class="a2" href="https://github.com/wangzivector">Xianli Wang</a><sup>1</sup>&nbsp; &nbsp;
               <a class="a2" href="https://scholar.google.com/citations?user=EhHaS1YAAAAJ">Zehao Wu</a><sup>1</sup>&nbsp; &nbsp;
@@ -85,7 +109,7 @@
 
               <div class="column">
                 <p class="mb-5">
-                  <a class="btn btn-light" style=" color:#c1e1e6; border-color: #000000;" href="" role="button">
+                  <a class="btn btn-light" style=" color:#c1e1e6; border-color: #000000;" href="bom.html" role="button">
                     <i class="fa-solid fa-list"></i> &nbsp;<b><ins>BOM</ins></b>
                   </a>
                 </p>
@@ -131,7 +155,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="overview">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -154,24 +178,23 @@
   <br>
 
   <!-- abstract -->
-  <section>
+  <section id="abstract">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2><strong>Abstract</strong></h2>
+          <h2><strong>Overview</strong></h2>
           <hr style="margin-top:0px">
 
           <p class="text-justify">
-            we introduce <b><em>OptTac</em></b>, a compact optoelectronic tactile sensor kit that reconstructs
-            <b>spatially distributed three-dimensional deformation</b> from optical measurements of paired
-            light-emitting diodes and photodiodes. We recover surface deformation via numerical optimization
+            We introduce <b><em>OptTac</em></b>, an optoelectronic taxel matrix design capable of measuring <b>three-dimensional 
+            distributed deformation, triaxial forces, and axial torque</b>. We recover surface deformation via numerical optimization
             of measured light-intensity distributions, then deploy a lightweight neural network to estimate
-            <b>triaxial contact forces and axial torque</b>. Leveraging a purpose-built taxel array and controlled
-            light-excitation protocols, our 3-mm-thick flexible sensor can be fabricated with readily
+            triaxial contact forces and axial torque. Leveraging a purpose-built taxel array and controlled
+            light-excitation protocols, our <b>3-mm-thick flexible sensor</b> can be fabricated with readily
             accessible workflows and integrated onto articulated robotic hands.
           </p>
           <p class="text-justify">
-            The <b>24 × 24 mm</b> sensing pad achieves full-scale mean absolute errors of
+            The <b>24 × 24 mm sensing pad</b> achieves full-scale mean absolute errors of
             <b>1.2%</b>, <b>1.7%</b>, and <b>2.4%</b> for normal force, shear force, and axial torque,
             respectively. We validate OptTac for multimodal manipulation-skill data collection and
             wrench-guided autonomous teleoperation using <b>a custom sensorized exoskeleton interface</b>.
@@ -183,11 +206,11 @@
     </div>
   </section>
   
-  <section>
+  <section id="devices">
     <div class="container">
       <div class="row">
         <div class="col-12" style="margin-top:40px">
-          <h2><strong>Developed devices</strong></h2>
+          <h2><strong>Devices</strong></h2>
           <hr style="margin-top:0px">
 
           <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>1. Contact-rich universal manipulation interface (UMI)</b></h4>
@@ -215,7 +238,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="results">
     <div class="container">
       <div class="row">
         <div class="col-12" style="margin-top:40px">
@@ -285,7 +308,7 @@
   </section>
 
   <!-- cite -->
-  <div class="container"  style="margin-top:20px">
+  <section id="citation" class="container" style="margin-top:20px">
     <div class="row">
       <div class="col-12">
         <h2><strong>Citation</strong></h2>
@@ -293,7 +316,7 @@
         <pre style="background-color: #e9eeef;padding: 0 1.5em">
 <code>
 @misc{wang2026opttac,
-  title={OptTac: Reproducible Optoelectronic Tactile Sensing of Distributed Triaxial Deformation, Force, and Torque for Robotic Manipulation},
+  title={Programmable optoelectronic taxel matrix enables triaxial distributed deformation, force, and torque sensing in robotic manipulation},
   author={Wang, Xianli and Wu, Zehao and Xu, Qingsong},
   note={Manuscript},
   year={2026}
@@ -301,11 +324,11 @@
         </pre>
       </div>
     </div>
-  </div>
+  </section>
   <br>
 
   <!-- Contact -->
-  <div class="container">
+  <section id="contact" class="container">
     <div class="row">
       <div class="col-12">
         <h2><strong>Contact</strong></h2>
@@ -325,7 +348,8 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
+  </main>
 
   <footer class="text-center" style="margin-bottom:10px; font-size: small;">
     <hr>
