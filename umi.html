@@ -36,11 +36,10 @@
       .main-navigation .navbar-nav {
         column-gap: 0.5rem;
       }
-
       .cover-jumbotron {
         padding-top: 2rem;
+        padding-bottom: 2rem;
       }
-
       .back-home {
         margin-top: 40px;
         margin-bottom: 40px;
@@ -58,7 +57,7 @@
             <a class="nav-item nav-link" style=" color:#338794;" href="circuit.html"><b>Circuit</b></a>
             <a class="nav-item nav-link" style=" color:#338794;" href="assembly.html"><b>Assembly</b></a>
             <a class="nav-item nav-link" style=" color:#338794;" href="calibration.html"><b>Calibration</b></a>
-            <a class="nav-item nav-link" style=" color:#338794;" href="umi.html"><b>UMI</b></a>
+            <a class="nav-item nav-link" style=" color:#be7941;" href="umi.html"><b>UMI</b></a>
           </div>
         </div>
       </nav>
@@ -69,18 +68,79 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col">
-              <h2 style="font-size:30px; max-width:1280px; margin:0 auto;">
+              <h2 style="color:#070707; font-size:30px; max-width:1280px; margin:0 auto;">
                 OptTac-integrated Universal Manipulation Interface
               </h2>
               <p style="font-size:1.2rem; color:#555; margin-top:1rem;">
-                Complete materials and instructions for building the OptTac-integrated Universal Manipulation Interface (UMI) for robotic manipulation tasks.
+                Materials and instructions for building the OptTac-integrated Universal Manipulation Interface.
               </p>
-              <hr>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+ 
+  <section id="devices">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-top:40px">
+          <h2><strong>Hardware assembly</strong></h2>
+          <hr style="margin-top:0px">
+          
+          <!-- Item 1 -->
+
+          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>1. Mechanical components</b></h4>
+          <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <img src="images/umi-mech.jpg" alt="OptTac overview" class="img-responsive graph" width="100%"/>
+          </div>
+          
+          <p class="text-justify" style="font-size:1.2rem; line-height: 1.6;">
+            The UMI exoskeleton parts includes four groups, 
+            PLA 3D-printed with STL at <a href="https://github.com/wangzivector/OptTac_Manufacture">OptTac_Manufacture</a>:
+            <br>1. <b>hand base</b>: Tag cube and hand base [<ins>palm_print</ins> folder]
+            <br>2. <b>thumb</b>: the thumb exploded view [<ins>thumb_print</ins> folder]
+            <br>3. <b>index finger</b>: the finger exploded view [<ins>finger_print</ins> folder]
+            <br>4. <b>middle finger</b>: the finger exploded view [<ins>finger_print</ins> folder]
+            <br> <em> For index and middle fingers, the length of distal phalanges are adjustable by choosing different screw holes. 
+              The approx phalanges for two fingers are different, with individual STL files for each finger.  
+            </em>
+          </p>
+
+          <hr style="opacity: 0.4; border: 0; border-top: 2px  dashed #cdcbcf; width: 65%; margin-top:30px; margin-bottom:30px">
+
+          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>2. Tag alignment</b></h4>
+ 
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="devices">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-top:40px">
+          <h2><strong>Electronic assembly</strong></h2>
+          <hr style="margin-top:0px">
+
+          <!-- Item 2-->
+          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>1. Electronic components</b></h4>
+          <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <img src="images/umi.jpg" alt="OptTac overview" class="img-responsive graph" width="75%"/>
+          </div>
+          <p class="text-justify" style="font-size:1.2rem;" >
+            <b>UMI</b>: Three primary hand fingers are equipped with OptPads controlled by the Exci-Meas module which is integrated into the marker cube of the visual fiducial system. The thumb is articulated by four-degree-of-freedom angular encoders, while each of two affiliated fingers is kinetically encoded by three joints.
+          </p>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
 
     <p class="text-center mt-4" style="color:#777;">
       <i class="fas fa-info-circle"></i>
