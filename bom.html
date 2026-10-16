@@ -45,6 +45,15 @@
         margin-top: 40px;
         margin-bottom: 40px;
       }
+
+      .bom-section {
+        margin: 2rem auto;
+        max-width: 1200px;
+      }
+
+      .bom-section h2 {
+        margin-bottom: 1rem;
+      }
     </style>
   </head>
 
@@ -57,7 +66,7 @@
             <a class="nav-item nav-link" style=" color:#be7941;" href="bom.html"><b>BOM</b></a>
             <a class="nav-item nav-link" style=" color:#338794;" href="circuit.html"><b>Circuit</b></a>
             <a class="nav-item nav-link" style=" color:#338794;" href="assembly.html"><b>Assembly</b></a>
-            <a class="nav-item nav-link" style=" color:#338794;" href="calibration.html"><b>Calibration</b></a>
+            <!-- <a class="nav-item nav-link" style=" color:#338794;" href="calibration.html"><b>Calibration</b></a> -->
             <a class="nav-item nav-link" style=" color:#338794;" href="umi.html"><b>UMI</b></a>
           </div>
         </div>
@@ -82,9 +91,103 @@
       </div>
     </section>
 
+    <main class="container">
+      <section class="bom-section" aria-labelledby="tools-heading">
+        <h2 id="tools-heading">Equipment</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-light">
+              <tr> <!-- item -->
+                <th scope="col">name</th>
+                <th scope="col">group</th>
+                <th scope="col">quantity</th>
+                <th scope="col">description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><!-- item -->
+                <td><b>3D PLA printer</b></td>
+                <td>Elastomer; UMI</td>
+                <td>1</td>
+                <td>1. To fabricate casting molds for middle-layer elastomer
+                  <br> 2. To fabricate the exoskeleton links of UMI
+                </td>
+              </tr>
+              <tr><!-- item -->
+                <td><b>Silicone rubber agents</b></td>
+                <td>OptPad</td>
+                <td>1 </td>
+                <td>1. Casting material for middle-layer elastomer. <a href="https://www.smooth-on.com/product-line/ecoflex/" target="_blank">Smooth-On Ecoflex</a> is required (i.e., 00-10) for direct use of trained wrench-regression model.
+                </td>
+              </tr>
+              <tr><!-- item -->
+                <td><b>Electronic soldering device</b></td>
+                <td>Exci-Meas module; UMI</td>
+                <td>1 </td>
+                <td>1. To solder RDC5060 joint encoders with connecting wires
+                  <br> 2. To solder electronic components onto the OptPad wiring board (Optional)
+                  <br> 3. To solder electronic components onto the UMI extended connecting board (Optional)
+                </td>
+              </tr>
+              <tr><!-- item -->
+                <td><b>Double-sided tape</b></td>
+                <td>OptPad; UMI</td>
+                <td>1</td>
+                <td>1. To assemble casting molds for middle-layer elastomer. 
+                  <br> 2. To fastly install OptPads onto the finger pads of UMI.
+                </td>
+              </tr>
+              <tr><!-- item -->
+                <td><b>Single-sided tape</b></td>
+                <td>OptPad</td>
+                <td>1</td>
+                <td>1. To assemble casting molds for middle-layer elastomer. 
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="bom-section" aria-labelledby="mechanics-heading">
+        <h2 id="mechanics-heading">Mechanics</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">name</th>
+                <th scope="col">group</th>
+                <th scope="col">quantity</th>
+                <th scope="col">description</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="bom-section" aria-labelledby="electronics-heading">
+        <h2 id="electronics-heading">Electronics</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">name</th>
+                <th scope="col">group</th>
+                <th scope="col">quantity</th>
+                <th scope="col">description</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
     <p class="text-center mt-4" style="color:#777;">
       <i class="fas fa-info-circle"></i>
-      Will be available soon. <br> Please check back later for the prepared materials.
+      More will be available soon. <br> Please check back later for the prepared materials.
     </p>
 
   <div class="text-center back-home">
