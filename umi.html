@@ -85,44 +85,51 @@
     <div class="container">
       <div class="row">
         <div class="col-12" style="margin-top:40px">
-          <h2><strong>Hardware assembly</strong></h2>
+          <h2><strong>Mechanical preparation</strong></h2>
           <hr style="margin-top:0px">
           
           <!-- Item 1 -->
-
-          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>1. Mechanical components</b></h4>
+          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>1. 3D-printed components</b></h4>
           <div class="row justify-content-center" style="align-items:center; display:flex;">
-            <img src="images/umi-mech.jpg" alt="OptTac overview" class="img-responsive graph" width="100%"/>
+            <img src="images/umi-mech@600x-80.jpg" alt="OptTac overview" class="img-responsive graph" width="100%"/>
           </div>
           
           <p class="text-justify" style="font-size:1.2rem; line-height: 1.6;">
-            The UMI exoskeleton parts includes four groups, 
-            PLA 3D-printed with STL at <a href="https://github.com/wangzivector/OptTac_Manufacture">OptTac_Manufacture</a>:
-            <br>1. <b>hand base</b>: Tag cube and hand base [<ins>palm_print</ins> folder]
-            <br>2. <b>thumb</b>: the thumb exploded view [<ins>thumb_print</ins> folder]
-            <br>3. <b>index finger</b>: the finger exploded view [<ins>finger_print</ins> folder]
-            <br>4. <b>middle finger</b>: the finger exploded view [<ins>finger_print</ins> folder]
-            <br> <em> For index and middle fingers, the length of distal phalanges are adjustable by choosing different screw holes. 
+            The UMI exoskeleton includes <b><ins>four modular groups, PLA 3D-printed with STL</ins></b> at <a href="https://github.com/wangzivector/OptTac_Manufacture">OptTac_Manufacture</a>:
+            <br>1. <b>palm group</b>: tag cube and hand base [<em>palm_print</em> folder]
+            <br>2. <b>thumb group</b>: refer to the thumb exploded view [<em>thumb_print</em> folder]
+            <br>3. <b>index-finger group</b>: refer to the finger exploded view [<em>finger_print</em> folder]
+            <br>4. <b>middle-finger group</b>: refer to the finger exploded view [<em>finger_print</em> folder]
+          </p>
+          <p class="text-justify" style="color: rgb(74, 145, 179); font-size:1.2rem; line-height: 1.6;">
+           <em> For index and middle fingers, the length of distal phalanges are adjustable by choosing different screw holes. 
               The approx phalanges for two fingers are different, with individual STL files for each finger.  
             </em>
           </p>
 
           <hr style="opacity: 0.4; border: 0; border-top: 2px  dashed #cdcbcf; width: 65%; margin-top:30px; margin-bottom:30px">
+          <!-- Item 2 -->
+          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>2. Apriltag cube</b></h4>
+           <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <img src="images/tagmark@600x-80.jpg" alt="OptTac overview" class="img-responsive graph" width="90%"/>
+          </div>
 
-          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>2. Tag alignment</b></h4>
- 
+          <p class="text-justify" style="font-size:1.2rem; line-height: 1.6;">
+           The <b><ins>Apriltag makers can be ink-printed with A4 papers</ins></b> (<a href="https://github.com/wangzivector/OptTac_Manufacture/blob/main/CAD_OptTac_UMI/tag_mark.pdf">PDF</a>) and attached on the 3D-printed tag cube, 
+           as demonstrated in the figure.
+           By adapting <em style="color: rgb(74, 145, 179);">an A4-paper print scale of 100%</em>, the marker size aligns with the software's default configuration.
+          </p>
 
         </div>
       </div>
     </div>
   </section>
 
-
   <section id="devices">
     <div class="container">
       <div class="row">
         <div class="col-12" style="margin-top:40px">
-          <h2><strong>Electronic assembly</strong></h2>
+          <h2><strong>Electronic preparation</strong></h2>
           <hr style="margin-top:0px">
 
           <!-- Item 2-->
@@ -131,11 +138,19 @@
             <img src="images/umi.jpg" alt="OptTac overview" class="img-responsive graph" width="75%"/>
           </div>
           <p class="text-justify" style="font-size:1.2rem;" >
-            <b>UMI</b>: Three primary hand fingers are equipped with OptPads controlled by the Exci-Meas module which is integrated into the marker cube of the visual fiducial system. The thumb is articulated by four-degree-of-freedom angular encoders, while each of two affiliated fingers is kinetically encoded by three joints.
+            1. <b>OptPad (x3)</b>: each of three fingers are equipped with an OptPad.
+            <br>2. <b>Joint encoder (x10)</b>: angular encoders (<a href="https://github.com/wangzivector/OptTac_Manufacture/blob/main/Hardware_docs/RDC5060.pdf">RDC5060</a>) to capture unoccluded hand motion (further below).
+            <br>3. <b>OptTac modules (x1)</b>: the Exci-Meas module extended with a wiring board for joint reading (further below).
+            <br>4. <b>2D visual camera (x1)</b>: we choose <a href="https://www.waveshare.com/wiki/OV9281_1MP_USB_Camera_(A)">OV9281</a>, with global shutter, 120FPS, monochrome, and USB-C interface.
           </p>
 
-
-
+          <hr style="opacity: 0.4; border: 0; border-top: 2px  dashed #cdcbcf; width: 65%; margin-top:30px; margin-bottom:30px">
+          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>2. Wiring and soldering</b></h4>
+          <p class="text-justify" style="font-size:1.2rem;" >
+            1. <b>RDC5060 soldering</b>: to connect joint encoders, we soldered the ten RDC5060 encoders with connecting wires.
+            <br>2. <b>Extended wiring board</b>: we provide the <a href="https://github.com/wangzivector/OptTac_Manufacture/blob/main">PCB source file</a> of the extended wiring board for fabricating it with commcercial PCBA service. 
+            
+          </p> 
 
         </div>
       </div>
