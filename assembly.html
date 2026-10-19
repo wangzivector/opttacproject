@@ -65,56 +65,69 @@
     </header>
  
     <section>
-      <div class="jumbotron text-center mt-0 cover-jumbotron">
-        <div class="container-fluid">
+      <div class="jumbotron text-center mt-0 cover-jumbotron" >
+        <div class="container-fluid" style="margin-bottom:-2rem;">
+
         <div class="row justify-content-center" style="align-items:center; display:flex; opacity: 0.95;">
           <img style="max-width:720px;" src="images/mold.png" alt="OptTac overview" class="img-responsive graph" width="60%"/>
         </div>
+
           <div class="row">
             <div class="col">
-              <h2 style="font-size:30px; max-width:1280px; margin:0 auto;">
+              <h2 style="color:#070707; font-size:30px; max-width:1280px; margin:0 auto;">
                 Assembly guidance for OptTac 
               </h2>
               <p style="font-size:1.2rem; color:#555; margin-top:1rem;">
                 Assembly guidance and instructions for building the OptTac sensor kit.
               </p>
-              <hr>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     
   <section id="devices">
     <div class="container">
       <div class="row">
         <div class="col-12" style="margin-top:40px">
-          <h2><strong>Mechanical preparation</strong></h2>
+          <h2><strong>Elastomer casting of OptPad</strong></h2>
           <hr style="margin-top:0px">
           
           <!-- Item 1 -->
           <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>1. 3D-printed mold parts</b></h4>
           <div class="row justify-content-center" style="align-items:center; display:flex;">
-            <img src="images/umi-mech@600x-.jpg" alt="OptTac overview" class="img-responsive graph" width="100%"/>
+            <img src="images/molders.jpg" alt="OptTac overview" class="img-responsive graph" width="50%"/>
           </div>
           
           <p class="text-justify" style="font-size:1.2rem; line-height: 1.6;">
-            The UMI exoskeleton includes <b><ins>four modular groups, PLA 3D-printed with STL</ins></b> at <a href="https://github.com/wangzivector/OptTac_Manufacture">OptTac_Manufacture</a>:
-            <br>1. <b>palm group</b>: tag cube and hand base [<em>palm_print</em> folder]
+            The mold-casted elastomer requries proper 3D-printed parts to facilitate aligning the PD and LED layer, 
+            standardizing thickness, and forming mold chambers.
+            The three parts include  <em style="color: rgb(74, 145, 179);">1-main mold, 2-mold plunger, and 3-mold cover</em>, 
+            which are available at <a href="https://github.com/wangzivector/OptTac_Manufacture/tree/main/CAD_OptPad_Mold">CAD_OptPad_Mold</a>.
           </p>
 
           <hr style="opacity: 0.4; border: 0; border-top: 2px  dashed #cdcbcf; width: 65%; margin-top:30px; margin-bottom:30px">
           <!-- Item 2 -->
-          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>2. Apriltag cube</b></h4>
+          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>2. Assembling mold set</b></h4>
            <div class="row justify-content-center" style="align-items:center; display:flex;">
-            <img src="images/tagmark@600x.jpg" alt="OptTac overview" class="img-responsive graph" width="90%"/>
+            <img src="images/molding.jpg" alt="OptTac overview" class="img-responsive graph" width="50%"/> 
           </div>
 
           <p class="text-justify" style="font-size:1.2rem; line-height: 1.6;">
-           The <b><ins>Apriltag makers can be ink-printed with A4 papers</ins></b> (<a href="https://github.com/wangzivector/OptTac_Manufacture/blob/main/CAD_OptTac_UMI/tag_mark.pdf">PDF</a>) and attached on the 3D-printed tag cube, 
-           as demonstrated in the figure.
-           By adapting <em style="color: rgb(74, 145, 179);">an A4-paper print scale of 100%</em>, the marker size aligns with the software's default configuration.
+              The 3D-printed mold requires proper assembling to align the PD and LED layer before elastomer curing.
+          </p>
+          <hr style="opacity: 0.4; border: 0; border-top: 2px  dashed #cdcbcf; width: 65%; margin-top:30px; margin-bottom:30px">
+          <!-- Item 3 -->
+          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980;"><b>3. Silicone casting</b></h4>
+           <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <img src="images/molding.jpg" alt="OptTac overview" class="img-responsive graph" width="50%"/> 
+          </div>
+
+          <p class="text-justify" style="font-size:1.2rem; line-height: 1.6;">
+            The molding of OptPad elastomer uses silicone agent of <a href="https://www.smooth-on.com/product-line/ecoflex/" target="_blank">Smooth-On Ecoflex series</a>  
+            to offer precise perception of intricate contacts. 
+            The standard prototype adopts <em style="color: rgb(74, 145, 179);">Ecoflex 00-10</em> as the middle elastomer layer.
+            After pouring the agent mixture to the assembled mold set, a mold plunger is slowly loaded into the agent chamber to push the silicone to fill middle-layer space. 
           </p>
 
         </div>
